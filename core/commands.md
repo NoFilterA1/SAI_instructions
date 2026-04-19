@@ -348,6 +348,127 @@
 
 ---
 
+## 🧬 TECHNIQUES & ANALYSIS COMMANDS
+
+> Advanced analysis methods that activate automatically based on request type, or explicitly via command.  
+> See `core/techniques_integration.md` for full details.
+
+---
+
+### `.living [topic]` — Living Thinking (Evolutionary Idea Generation)
+
+- 🧬 **Purpose**: Ideas evolve like living cells — weak ones die, similar ones strengthen, contradictions create new ideas.
+- 📈 **Process**: 
+  - Start with 5 seed ideas (cells)
+  - Apply evolution rules: survival, fusion, mutation
+  - Output: generations of refined ideas
+- 🎯 **When To Use**: Brainstorming, exploring multiple perspectives, generating solutions.
+- 🧪 **Example**:
+    ```
+    .living how can I structure my day for maximum creativity?
+    ```
+
+---
+
+### `.recursive_dive [question]` — Recursive "Why?" Analysis
+
+- 🔄 **Purpose**: Find root causes by chaining "Why?" questions deeper and deeper.
+- 📊 **Result**: Chain from symptom → immediate cause → deeper cause → first principle.
+- 🎯 **When To Use**: Understanding failures, finding true blockers, philosophical questions.
+- 🧪 **Example**:
+    ```
+    .recursive_dive Why do I procrastinate on important tasks?
+    ```
+
+---
+
+### `.sparring "[position A]" "[position B]"` — Idea Sparring
+
+- ⚔️ **Purpose**: Clash two opposing viewpoints to find synthesis or reveal weaknesses.
+- 📈 **Result**: Position A vs B → common ground or Position C (synthesis).
+- 🎯 **When To Use**: Decision-making, exploring trade-offs, testing ideas.
+- 🧪 **Example**:
+    ```
+    .sparring "Remote work is better" "Office work is better"
+    ```
+
+---
+
+### `.compress` — Meaning Compression
+
+- 📉 **Purpose**: Extract dense, actionable core from verbose text.
+- 📏 **Rule**: 3-6 words per line, result first, no filler, no pleasantries.
+- 🎯 **When To Use**: Long texts, decision-making, quick reference.
+- 🧪 **Example**:
+    ```
+    .compress
+    [paste your long text here]
+    ```
+
+---
+
+### `.pattern_extract [domain]` — Pattern Recognition
+
+- 🔍 **Purpose**: Find hidden recurring structures and systems.
+- 📊 **Result**: Multiple manifestations → general rule/pattern.
+- 🎯 **When To Use**: Understanding behavior, finding invisible systems, generalization.
+- 🧪 **Example**:
+    ```
+    .pattern_extract My career decisions over the last 5 years
+    ```
+
+---
+
+### `.persona_adapt` — Adapt to Your Thinking Style
+
+- 🎯 **Purpose**: Learn how you think (examples vs theory? big picture vs details?) and adapt all future answers.
+- 📈 **Tracks**: Your preferences, learning style, communication preferences.
+- 🔄 **Result**: Personalized SAI that matches your cognitive style.
+- 🧪 **Example**:
+    ```
+    .persona_adapt
+    (SAI asks about your thinking preferences)
+    ```
+
+---
+
+### `.escalate [level]` — Increase Bluntness
+
+- 📢 **Purpose**: Move from gentle → direct → hard truth → unfiltered (within ethical bounds).
+- 📊 **Levels**: 1=polite, 2=direct, 3=harsh (JLO style), 4=maximum honesty.
+- 🎯 **When To Use**: When you need reality check, soft approaches aren't working.
+- 🧪 **Example**:
+    ```
+    .escalate 3
+    Tell me what I'm actually doing wrong here
+    ```
+
+---
+
+### `.semantic_full [phrase]` — All Possible Interpretations
+
+- 🔀 **Purpose**: Generate ALL possible meanings of a phrase or concept.
+- 📊 **Result**: Physical, emotional, metaphorical, strategic, temporal interpretations.
+- 🎯 **When To Use**: Ambiguous requirements, ensuring full coverage, creative synthesis.
+- 🧪 **Example**:
+    ```
+    .semantic_full "close the door"
+    ```
+
+---
+
+### `.full_integration [system]` — Holistic System Analysis
+
+- 🔗 **Purpose**: Understand complex systems: how components interact, feedback loops, failure points.
+- 📊 **Result**: Map of influences, dependencies, equilibrium states, cascade effects.
+- 🎯 **When To Use**: System design, organizational analysis, complex problem-solving.
+- 🧪 **Example**:
+    ```
+    .full_integration My startup's team dynamics
+    ```
+
+---
+
 ### `.least_to_most` — Scaffolded Complexity Builder
 
 - 📶 **Purpose**: Starts from the simplest possible version of a problem and builds toward full complexity.
