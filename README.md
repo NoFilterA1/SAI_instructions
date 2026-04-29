@@ -1,3 +1,5 @@
+![SAI BANNER](https://github.com/NoFilterA1/SAI_instructions/blob/main/assets/bannerr.png?raw=true)
+
 # 🧠 SAI — Self Adaptive Intelligence
 
 ![SAI](https://img.shields.io/badge/SAI-Self%20Adaptive%20Intelligence-2f2f2f?style=for-the-badge&labelColor=111111)
