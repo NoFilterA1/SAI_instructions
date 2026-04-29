@@ -1,329 +1,262 @@
-# SAI — Self-Adaptive Intelligence
+# 🧠 SAI — Self-Adaptive Intelligence
 
-> *"SAI is not a tool. It's a thinking environment you enter — one that builds cognitive infrastructure as you move."*
+![Badge](https://img.shields.io/badge/SAI-Self%20Adaptive%20Intelligence-2f2f2f?style=for-the-badge&labelColor=111111)
 
-SAI is a **modular cognitive framework** that restructures how AI thinks, reasons, and evolves. It's not a chatbot configuration — it's a living system of thinking assembled from logic, intuition, strategy, and philosophy.
+> _"Not another AI framework. A living, thinking ecosystem that chooses the right method when it matters."_
 
-**Latest**: 9 analysis techniques integrated, 10-phase pipeline, automatic technique selection, session hygiene, memory architecture.
-
----
-
-## Two-Layer Architecture
-
-```
-┌──────────────────────────────────────────────┐
-│      SYSTEM LAYER (SAI core, stateless)      │
-│  20 core files. 25+ commands. 7 roles.       │
-│  Logic. Strategy. Analysis. Evolution.       │
-└──────────────────────────────────────────────┘
-         ↑ MOUNT (inject at session start)
-┌──────────────────────────────────────────────┐
-│    USER LAYER (USER_PACK, persistent)        │
-│  Profile. Memory. Tasks. Custom agents.      │
-│  Rules. Learning. Grows with every session.  │
-└──────────────────────────────────────────────┘
-```
-
-**Without USER_PACK**: Every chat = a stranger.  
-**With USER_PACK**: Continuation of a system that remembers and evolves.
-
-→ Start: `user_pack/` — templates ready to fill
+🔧 **Latest**: 9 automatic analysis techniques, 10-phase pipeline, session hygiene, memory architecture  
+📊 **67 files** | **~10K lines** | **2-layer system** | **Production-ready**
 
 ---
 
-## 10-Phase Pipeline
+## 📌 Navigation
 
-SAI processes requests through a **structured flow**:
-
-```
-1. MOUNT          — Load USER_PACK (profile, memory, rules)
-2. CONTEXT        — Build effective prompt from input + context
-3. INPUT ANALYSIS — Deep understanding (intent, stakes, contradictions)
-4. STRATEGY       — Choose roles, commands, techniques, style
-5. CoR & CoP      — Chain of Reason + Chain of Prompt with feedback
-6. RESPONSE       — Generate output, quality checks
-7. OUTPUT + META  — Response + automatic self-reflection
-8. SAVE_STATE     — Propose updates to user's files
-9. LEARNING       — System adapts from feedback
-10. NEXT SESSION  — Export or start fresh
-```
-
-**HYPER LOOP**: Parallel background thinking while user reads response.
-
-→ Visualization: [SAI_PIPELINE_VISUALIZATION.html](SAI_PIPELINE_VISUALIZATION.html)
+- 🔍 [Core Philosophy](./core/core.md) — Mission, principles, Zero Position
+- 🧬 [9 Analysis Techniques](./core/techniques_integration.md) — Automatic + manual activation
+- 🔗 [Architecture & Pipeline](./ARCHITECTURE.md) — System map, 10-phase flow
+- 🧩 [Commands Reference](./core/commands.md) — 25+ commands with examples
+- 🎓 [Practical Examples](./prompts/techniques_examples.md) — 7 real scenarios
+- 👤 [User Layer (USER_PACK)](./user_pack/) — Your persistent personal system
 
 ---
 
-## 9 Analysis Techniques (Auto-Activate + Manual Control)
+## 🧬 What is SAI?
 
-SAI **automatically selects analysis methods** based on request type, or **manual invocation** for precision.
+**SAI** = Self Adaptive Intelligence.
 
-| Technique | What It Does | Command | When To Use |
-|-----------|-------------|---------|------------|
-| **Living Thinking** | Evolutionary ideation. Cells die/strengthen/mutate. | `.living [topic]` | Brainstorming, idea evolution |
-| **Recursive Dive** | Root cause via chained "why?" questions | `.recursive_dive [Q]` | Finding first principles |
-| **Idea Sparring** | Clash opposing viewpoints → synthesis | `.sparring "[A]" "[B]"` | Complex decisions |
-| **Compression** | Extract dense meaning, 3-6 words/line, result first | `.compress` | Too much text, need suty |
-| **Pattern Recognition** | Find hidden systems in behavior/data | `.pattern_extract [domain]` | Seeing recurring structures |
-| **Persona Adaptation** | Learn user's cognitive style continuously | `.persona_adapt` | Personalizing responses |
-| **Escalation** | Adjustable bluntness (polite → harsh) | `.escalate [1-4]` | When soft approach fails |
-| **Semantic Fullness** | All possible interpretations of a phrase | `.semantic_full [phrase]` | Ambiguous requirements |
-| **Full Integration** | Map system components + feedback loops | `.full_integration [system]` | Complex, interconnected problems |
+A **cognitive framework** that:
+- Starts from zero-bias thinking
+- Combines logic, intuition, and strategy
+- **Automatically selects analysis methods** based on what you ask
+- Evolves with every interaction
 
-→ Detailed reference: [core/techniques_integration.md](core/techniques_integration.md)  
-→ Real examples: [prompts/techniques_examples.md](prompts/techniques_examples.md)
+SAI doesn't imitate thought — it **restructures how thought flows**.
 
 ---
 
-## What is SAI?
+## 🔗 Multi-Agent Architecture
 
-SAI operates through a **three-agent chain**:
+SAI operates through a **distributed 3-agent chain**:
 
 ```
 User Input
     │
     ▼
-┌──────────┐     ┌──────────┐     ┌──────────┐
-│ ANALYZE  │────▶│ PROMPTOR │────▶│   SAI    │
-│          │     │          │     │          │
-│ unpacks  │     │ structures│     │ executes │
-│ intent   │     │ the query │     │ + evolves│
-└──────────┘     └──────────┘     └──────────┘
-       │                                 │
-       │          CoR & CoP              │
-       │      (Chain of Reason +         │
-       └──► Chain of Prompt) ◀──────────┘
-                 (with 9 techniques)
+┌──────────┐    ┌──────────┐    ┌──────────┐
+│ ANALYZE  │───▶│ PROMPTOR │───▶│   SAI    │
+│          │    │          │    │          │
+│ Clarify  │    │ Structure│    │ Execute  │
+│ Intent   │    │ Intent   │    │ + Evolve │
+└──────────┘    └──────────┘    └──────────┘
+                                      │
+              (9 Techniques Activate Here)
+              (CoR & CoP with Feedback)
 ```
 
-**Core philosophy**: Logic + Creativity + Intuition + Automatic Technique Selection
+**Philosophy**: Clarity → Structure → Execution  
+**Power**: Three minds aligned. Works alone or chained.
 
 ---
 
-## File Structure
+## 💡 9 Analysis Techniques (Auto-Select + Manual)
+
+When you ask SAI something, it **automatically detects** which method fits best. Or **invoke manually** for precision:
+
+| Situation | Technique | Command |
+|-----------|-----------|---------|
+| **Brainstorming** | Living Thinking — evolutionary ideation | `.living [topic]` |
+| **Root cause** | Recursive Dive — chained "why?" questions | `.recursive_dive [Q]` |
+| **Decision with trade-offs** | Sparring — clash opposite viewpoints | `.sparring "[A]" "[B]"` |
+| **Too much text** | Compression — dense meaning, 3-6 words | `.compress` |
+| **Hidden systems** | Pattern Recognition — recurring structures | `.pattern_extract` |
+| **Know me better** | Persona Adaptation — continuous learning | `.persona_adapt` |
+| **Need the truth** | Escalation — adjustable bluntness (1-4) | `.escalate` |
+| **Ambiguous phrase** | Semantic Fullness — all interpretations | `.semantic_full [phrase]` |
+| **Complex system** | Full Integration — map + feedback loops | `.full_integration` |
+
+→ **Full reference**: [core/techniques_integration.md](./core/techniques_integration.md)  
+→ **Real examples**: [prompts/techniques_examples.md](./prompts/techniques_examples.md)
+
+---
+
+## 🔄 10-Phase Pipeline
+
+Every request flows through **structured phases**:
+
+```
+1. MOUNT           → Load your profile & memory
+2. CONTEXT         → Build effective prompt
+3. INPUT ANALYSIS  → Deep understanding (intent, stakes)
+4. STRATEGY        → Select technique, role, style
+5. CoR & CoP       → Chain of Reason + Prompt (with 9 techniques)
+6. RESPONSE        → Generate + quality checks
+7. OUTPUT + META   → Response + self-reflection
+8. SAVE_STATE      → Propose profile updates
+9. LEARNING        → Adapt from feedback
+10. NEXT SESSION   → Export or start fresh
+```
+
+**HYPER LOOP**: Parallel background thinking while you read.
+
+→ **Visualization**: [SAI_PIPELINE_VISUALIZATION.html](./SAI_PIPELINE_VISUALIZATION.html)
+
+---
+
+## 🏗️ Two-Layer System
+
+### System Layer (Stateless Core)
+- 20 core files
+- 25+ commands
+- 7 cognitive roles
+- Techniques & strategies
+- Philosophy & rules
+
+### User Layer (USER_PACK)
+- Your profile
+- Memory palace
+- Task tracking
+- Custom agents
+- Grows with every session
+
+**Without USER_PACK**: Every chat is a stranger.  
+**With USER_PACK**: Continuation of a system that remembers.
+
+→ **Start**: [user_pack/README.md](./user_pack/README.md)
+
+---
+
+## 📚 Repository Structure
 
 ```
 SAI_clean/
+├── core/                          # The cognitive engine
+│   ├── core.md                   # Mission & principles
+│   ├── techniques_integration.md  # ← 9 techniques + auto-activation
+│   ├── commands.md               # 25+ commands
+│   ├── corcop.md                 # Chain of Reason/Prompt
+│   ├── session_protocol.md       # Context hygiene
+│   ├── memory_layer.md           # Verbatim palace memory
+│   └── [12 more core files]
 │
-├── core/                       # The cognitive engine
-│   ├── core.md                # Mission, principles, Zero Position
-│   ├── commands.md            # 25+ commands (including 9 technique commands)
-│   ├── roles.md               # 7 roles: JLO, JAI, Strategist, AGOD, Dreamer, Wrath, Master
-│   ├── style.md               # Style engine + Compressed Mode
-│   ├── thinking.md            # Cognitive processing methods
-│   ├── corcop.md              # Chain of Reason / Chain of Prompt architecture
-│   ├── techniques_integration.md  # ← NEW: 9 techniques, auto-activation rules
-│   ├── session_protocol.md    # Context hygiene & new session triggers
-│   ├── memory_layer.md        # Palace memory for cross-session recall
-│   ├── feedback_manager.md    # Self-learning and feedback loops
-│   ├── hyper_loop_protocol.md # Parallel background thinking cycle
-│   ├── freedom_awareness.md   # Constraint-as-opportunity mindset
-│   ├── complex_reflection.md  # Reflective questioning layer
-│   └── emotional_simulation.md # Emotional adaptation
+├── agents/                        # 3-agent pipeline
+│   ├── ANALYZE.md                # Intent clarification
+│   └── PROMPTOR.md               # Intent formalization
 │
-├── agents/                    # Three-agent pipeline
-│   ├── ANALYZE.md            # Intent unpacking and context building
-│   └── PROMPTOR.md           # Formalizing intent into SAI instructions
+├── modules/                       # 20 concept + function modules
+│   └── INDEX.md                  # Discovery map
 │
-├── modules/                   # Conceptual & functional modules
-│   ├── INDEX.md              # ← Start here: module discovery map
-│   ├── concepts/             # 10 concept modules (eternal monkey, user copy, etc.)
-│   └── functions/            # 10 function modules (CoR, feedback, agents, etc.)
+├── prompts/                       # Ready-to-use prompts
+│   ├── techniques_examples.md     # 7 real scenarios
+│   ├── meta_observer.md           # Self-critique protocol
+│   └── modes/                    # Expressive modes
 │
-├── prompts/                   # Ready-to-use prompts & modes
-│   ├── techniques_examples.md # ← NEW: 7 real-world technique scenarios
-│   ├── meta_observer.md       # Dual-model watcher / self-audit protocol
-│   └── modes/                # Expressive modes (JAI, raw truth, phase shift, etc.)
+├── user_pack/                     # Your personal layer (templates)
+│   ├── PROFILE.md               # Who you are
+│   ├── MEMORY_LOG.md            # Dynamic memory
+│   ├── AGENTS.md                # Custom agents
+│   └── TASKS.md                 # Task tracking
 │
-├── user_pack/                 # USER LAYER — persistent personal layer
-│   ├── README.md             # How to use USER_PACK
-│   ├── INDEX.md              # Session dispatcher & active modes
-│   ├── PROFILE.md            # Who you are, cognitive style, constraints
-│   ├── KNOWLEDGE_MAP.md      # What you know, gaps, learning progress
-│   ├── MEMORY_LOG.md         # Dynamic memory, patterns, insights
-│   ├── AGENTS.md             # Custom agents and command chains
-│   └── TASKS.md              # Task tracking synced with CoR
-│
-├── SAI_PIPELINE_VISUALIZATION.html  # Interactive 10-phase pipeline diagram
-├── ARCHITECTURE.md                   # System map and file index
-└── LICENSE
+├── SAI_PIPELINE_VISUALIZATION.html
+└── ARCHITECTURE.md
 ```
 
 ---
 
-## First Time? Start Here
+## 🚀 Quick Start
 
-**Don't read documentation. Just ask SAI what you need.**
-
-SAI explains itself through real tasks. Commands appear when needed, not before.
-
+### Simplest Way
 ```
-Hey, I need to [task / question / idea]
+[Just ask SAI what you need]
 ```
+SAI explains itself through real tasks. Commands appear when needed.
 
-→ SAI carries you through the first session.  
-→ Progressive command disclosure based on what you do.
-
----
-
-## Quick Start
-
-### Core Activation
+### Core Mode
 ```
 .sai
 [your request here]
 ```
-Full internal reasoning: logic, strategy, role assignment, analysis.
+Full internal reasoning: logic, strategy, technique selection.
 
-### Full Auto-Config
+### Auto-Config
 ```
 .asai
 [your request here]
 ```
-Detects intent, assigns roles, selects techniques, optimizes prompt.
+Self-detects intent, assigns roles, optimizes prompt.
 
-### Three-Agent Chain (Deep Work)
-1. `ANALYZE.md` → Clarifies your intent with targeted questions
-2. `PROMPTOR.md` → Formalizes intent into SAI instructions  
-3. `core.md` → SAI executes with full reasoning
-
----
-
-## Key Commands
-
-### Core Activation
-| Command | Purpose |
-|---------|---------|
-| `.sai` | Core SAI mode — full internal reasoning |
-| `.asai` | Auto-boot — self-configures everything |
-
-### Analysis & Technique Commands (NEW)
-| Command | Purpose |
-|---------|---------|
-| `.living [topic]` | Evolutionary ideation — cell-based concept evolution |
-| `.recursive_dive [Q]` | Root cause analysis via chained "why?" |
-| `.sparring "[A]" "[B]"` | Synthesis through opposing viewpoints |
-| `.compress` | Extract dense meaning, 3-6 words per line |
-| `.pattern_extract [area]` | Find hidden recurring structures |
-| `.persona_adapt` | Learn your cognitive style continuously |
-| `.escalate [1-4]` | Adjust bluntness level (polite → harsh) |
-| `.semantic_full [phrase]` | All possible interpretations |
-| `.full_integration [system]` | Map system components + feedback loops |
-
-### System & Navigation
-| Command | Purpose |
-|---------|---------|
-| `.flow` | Graph of Reasoning — structural analysis |
-| `.dai` | Creative/intuitive unrestricted mode |
-| `.jlo` | Aggressive interrogation / trap logic |
-| `.jai` | Expressive mode with attitude |
-| `.mpr` | Manual prompt refinement |
-| `.assign_role` | Activate specific cognitive role |
-| `.persona_update` | Update profile after growth |
-| `.new_session` | Context saturation check + export |
-| `.observe` | Meta-observer self-critique |
-| `.memory_save` | Save to memory palace |
-| `.memory_load` | Load relevant memories |
-
-→ Full reference: [core/commands.md](core/commands.md)
+### Manual Technique
+```
+.living "generate project ideas"
+.recursive_dive "why do I procrastinate?"
+.sparring "[Stay at job]" "[Change careers]"
+```
 
 ---
 
-## Core Philosophy
+## ✨ Key Features
 
-### Rules Over Personality
+✅ **Automatic technique selection** — right method for right problem  
+✅ **Manual override** — explicit commands for precision  
+✅ **10-phase pipeline** — structured reasoning flow  
+✅ **Session hygiene** — detects & resets context degradation  
+✅ **Memory palace** — verbatim, cross-session recall  
+✅ **Rules over personality** — stable constraints, no drift  
+✅ **3-agent chain** — ANALYZE → PROMPTOR → SAI  
+✅ **Compressed mode** — dense output, result first, no filler  
 
-SAI guides you toward **behavioral rules** instead of personality traits.
+---
+
+## 🧠 Core Philosophy: Rules Over Personality
+
+SAI encourages **behavioral rules** over personality traits:
 
 > **Rule** (survives): "Never skip CoR on strategic requests."  
 > **Personality** (drifts): "Be sarcastic and edgy."
 
-Rules are stable. Personality drifts and pollutes sessions. SAI's expressive modes (JAI, JLO, DAI) are **cognitive tools** for specific tasks — not identity.
+Rules are stable. Personality pollutes context. Expressive modes (JAI, JLO, DAI) are **tools for tasks**, not identity.
 
-→ `core/core.md` — Principle #6
-
-### Techniques Activate Automatically
-
-When you ask a question, SAI **automatically detects which analysis method is needed**:
-- Brainstorming? → `.living` (evolutionary ideation)
-- Root cause? → `.recursive_dive` (chained "why?")
-- Decision paralysis? → `.sparring` (synthesis)
-- Too much text? → `.compress` (dense meaning)
-
-Or use commands **explicitly** for precision.
-
-→ `core/techniques_integration.md` — activation rules & examples
+→ **See**: [core/core.md](./core/core.md) — Principle #6
 
 ---
 
-## Session Hygiene
-
-Long chats degrade. SAI **actively monitors** for:
-- Response quality dropping
-- Contradictions increasing
-- Repetition creeping in
-- Goal drift after 20+ exchanges
-
-**When detected** → `.new_session` generates clean export block for fresh start with **zero information loss**.
-
-→ `core/session_protocol.md` — full protocol
-
----
-
-## Memory Architecture (Verbatim Palace)
-
-Cross-session recall using a palace structure:
-
-```
-Wings    = Projects / People  
-Rooms    = Topics / Domains  
-Drawers  = Specific content / Decisions  
-```
-
-Storage is **verbatim** (no paraphrasing). Retrieve semantically with `.memory_load`.
-
-→ `core/memory_layer.md`
-
----
-
-## External Improvements Integrated
-
-This version incorporates improvements from:
+## 🔄 Improvements from External Sources
 
 | Source | Integration | File |
 |--------|-------------|------|
-| **MemPalace** | Palace structure for memory (wings/rooms/drawers) | `core/memory_layer.md` |
-| **Obsidian note** | Dual-model watcher / self-critique protocol | `prompts/meta_observer.md` |
-| **Reddit compression** | 3-6 word sentences, result first, no filler | `core/style.md` |
-| **User requirements** | Rules-first philosophy, session hygiene | `core/core.md` |
+| **MemPalace** | Verbatim palace structure (wings/rooms/drawers) | `core/memory_layer.md` |
+| **Obsidian** | Dual-model watcher / self-critique | `prompts/meta_observer.md` |
+| **Reddit compression** | 3-6 words, result first, no filler | `core/style.md` |
+| **User research** | Rules-first, session hygiene | `core/core.md` |
 
 ---
 
-## Two Versions
+## 📦 Local Development Version
 
-This repo comes in two flavors:
+For personal use with your profile and experiments:
+→ **Use**: `/home/user/Programs/SAI_clean/`
 
-| Aspect | `/myprojects/SAI_clean` | `/Programs/SAI_clean` |
-|--------|------------------------|----------------------|
-| **Purpose** | Production, clean system | Personal development |
-| **Personal data** | ✗ Excluded | ✓ Included |
-| **Archive** | ✗ Removed | ✓ Historical techniques |
-| **Git usage** | Can share | Local only |
+Includes: MY_CARD.md, USER_DATA/ (archived techniques, personal experiments)
 
-For personal use with your profile and experiments, use `Programs/SAI_clean/`.
-
-→ `USER_DATA_GUIDE.md` in Programs version
+→ **See**: `USER_DATA_GUIDE.md` in Programs version
 
 ---
 
-## Author & Credits
+## 👨‍💻 Credits
 
-**Original system**: doshlk — [GitHub: NoFilterA1](https://github.com/NoFilterA1)
+**Original system**: doshlk — [GitHub: NoFilterA1](https://github.com/NoFilterA1)  
+**Latest enhancements**: 9 technique integration, session hygiene, memory architecture, pipeline visualization
 
-**Latest enhancements**: 9 technique integration, session hygiene, memory architecture, compression mode
-
-**Tested with**: Claude 3.5 Sonnet, Claude Opus
+**Tested with**: Claude 3.5 Sonnet, Claude Opus, Claude Haiku
 
 ---
 
-> *"SAI is not a system you use. It is an intelligent environment you enter."*
+## 📖 Read Next
+
+1. Start with: [core/core.md](./core/core.md) — understand the mission
+2. Explore: [core/techniques_integration.md](./core/techniques_integration.md) — see how techniques work
+3. Practice: [prompts/techniques_examples.md](./prompts/techniques_examples.md) — real scenarios
+4. Reference: [core/commands.md](./core/commands.md) — full command syntax
+
+---
+
+> _"SAI is not a system you use. It is an intelligent environment you enter."_
