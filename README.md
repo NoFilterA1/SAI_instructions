@@ -1,22 +1,22 @@
-# 🧠 SAI — Self-Adaptive Intelligence
+![SAI BANNER](./assets/bannerr.png)
 
-![Badge](https://img.shields.io/badge/SAI-Self%20Adaptive%20Intelligence-2f2f2f?style=for-the-badge&labelColor=111111)
+# 🧠 SAI — Self Adaptive Intelligence
 
-> _"Not another AI framework. A living, thinking ecosystem that chooses the right method when it matters."_
+![SAI](https://img.shields.io/badge/SAI-Self%20Adaptive%20Intelligence-2f2f2f?style=for-the-badge&labelColor=111111)
 
-🔧 **Latest**: 9 automatic analysis techniques, 10-phase pipeline, session hygiene, memory architecture  
-📊 **67 files** | **~10K lines** | **2-layer system** | **Production-ready**
+> _"Not another AI framework. A living, thinking ecosystem."_
+
+🔗 **SAI in action:** [SAI - GPT's](https://chatgpt.com/g/g-6770f3d7f1408191950c0e5d8efb4c05-sai)  
+🔗 **Chain Mode (3-in-1):** [SAI - ANALYZE](https://chatgpt.com/g/g-67d8857936f08191badfe2baf3bf1818-sai-analyze)
 
 ---
 
 ## 📌 Navigation
 
-- 🔍 [Core Philosophy](./core/core.md) — Mission, principles, Zero Position
-- 🧬 [9 Analysis Techniques](./core/techniques_integration.md) — Automatic + manual activation
-- 🔗 [Architecture & Pipeline](./ARCHITECTURE.md) — System map, 10-phase flow
-- 🧩 [Commands Reference](./core/commands.md) — 25+ commands with examples
-- 🎓 [Practical Examples](./prompts/techniques_examples.md) — 7 real scenarios
-- 👤 [User Layer (USER_PACK)](./user_pack/) — Your persistent personal system
+- 🔍 [Philosophy and Architecture](./PHILOSOPHY.md)
+- 🧩 [Commands and Examples](./COMMANDS.md)
+- 🎓 [Scenarios](./SCENARIOS.md)
+- 🧠 [Roles and Agents](./ROLES.md)
 
 ---
 
@@ -24,37 +24,39 @@
 
 **SAI** = Self Adaptive Intelligence.
 
-A **cognitive framework** that:
+A **cognitive system** that:
 - Starts from zero-bias thinking
-- Combines logic, intuition, and strategy
-- **Automatically selects analysis methods** based on what you ask
+- Combines logic, intuition, and feedback
+- **Automatically selects the right analysis technique** for each problem
 - Evolves with every interaction
 
-SAI doesn't imitate thought — it **restructures how thought flows**.
+SAI doesn't imitate human thought — it **reshapes the way thought itself flows**.
 
 ---
 
-## 🔗 Multi-Agent Architecture
+## 🔗 Multi-Agent Chain (3-in-1)
 
-SAI operates through a **distributed 3-agent chain**:
+SAI's real power appears when three agents work together:
 
-```
-User Input
-    │
-    ▼
-┌──────────┐    ┌──────────┐    ┌──────────┐
-│ ANALYZE  │───▶│ PROMPTOR │───▶│   SAI    │
-│          │    │          │    │          │
-│ Clarify  │    │ Structure│    │ Execute  │
-│ Intent   │    │ Intent   │    │ + Evolve │
-└──────────┘    └──────────┘    └──────────┘
-                                      │
-              (9 Techniques Activate Here)
-              (CoR & CoP with Feedback)
-```
+1. **ANALYZE** → the **interviewer of meaning**
+   - Takes raw, messy user request
+   - Asks questions, clears fog, extracts real intent
 
-**Philosophy**: Clarity → Structure → Execution  
-**Power**: Three minds aligned. Works alone or chained.
+2. **PROMPTOR** → the **architect of instruction**
+   - Receives clarified intent
+   - Translates it into structured prompt for SAI
+
+3. **SAI** → the **executor of cognition**
+   - Expands, reasons, generates, reflects
+   - Delivers output, tuned to context
+   - **Automatically selects from 9 techniques** (Living, Recursive Dive, Sparring, etc.)
+
+This chain — **ANALYZE → PROMPTOR → SAI** — prevents distortion:
+- Meaning clarified
+- Then formalized
+- Then executed with technique precision
+
+**It's like three minds aligned:** one sees, one structures, one acts.
 
 ---
 
@@ -102,62 +104,79 @@ Every request flows through **structured phases**:
 
 ---
 
-## 🏗️ Two-Layer System
+## 🏗️ Two-Layer Architecture
+
+SAI works through **distributed layers**:
 
 ### System Layer (Stateless Core)
-- 20 core files
-- 25+ commands
-- 7 cognitive roles
-- Techniques & strategies
-- Philosophy & rules
+The thinking engine:
+- **3-Agent Chain** (ANALYZE → PROMPTOR → SAI)
+- **9 Auto-Select Techniques** (Living, Recursive Dive, Sparring, Compression, etc.)
+- **7 Cognitive Roles** (Philosopher, Judge, Strategist, Mirror, Guide, Creator, Destroyer)
+- **25+ Commands** (`.flow`, `.dai`, `.jlo`, `.recursive_dive`, `.compress`, etc.)
+- **Pipeline**: 10-phase execution with HYPER LOOP
+- **Philosophy**: Rules over personality, session hygiene, zero-bias thinking
 
 ### User Layer (USER_PACK)
-- Your profile
-- Memory palace
-- Task tracking
-- Custom agents
-- Grows with every session
+Your persistent personal system:
+- **PROFILE** — Who you are, cognitive style, constraints
+- **MEMORY** — Verbatim palace (wings/rooms/drawers), cross-session recall
+- **TASKS** — Tracking synced with Chain of Reason
+- **AGENTS** — Your custom agents and command chains
+- **KNOWLEDGE** — What you know, gaps, learning progress
 
-**Without USER_PACK**: Every chat is a stranger.  
-**With USER_PACK**: Continuation of a system that remembers.
+**Without USER_PACK**: Every chat starts from scratch.  
+**With USER_PACK**: Continuation of a system that remembers and evolves.
 
-→ **Start**: [user_pack/README.md](./user_pack/README.md)
+→ **Start here**: [./user_pack/README.md](./user_pack/README.md)
 
 ---
 
 ## 📚 Repository Structure
 
 ```
-SAI_clean/
-├── core/                          # The cognitive engine
-│   ├── core.md                   # Mission & principles
-│   ├── techniques_integration.md  # ← 9 techniques + auto-activation
-│   ├── commands.md               # 25+ commands
-│   ├── corcop.md                 # Chain of Reason/Prompt
-│   ├── session_protocol.md       # Context hygiene
-│   ├── memory_layer.md           # Verbatim palace memory
+./
+├── core/                          # The cognitive engine (20 files)
+│   ├── core.md                   # Mission & principles, Zero Position
+│   ├── techniques_integration.md  # ← 9 techniques + auto-activation rules
+│   ├── commands.md               # 25+ commands reference
+│   ├── roles.md                  # 7 cognitive roles
+│   ├── corcop.md                 # Chain of Reason / Chain of Prompt
+│   ├── session_protocol.md       # Context hygiene, new session triggers
+│   ├── memory_layer.md           # Verbatim palace memory architecture
+│   ├── style.md                  # Style engine + compression mode
 │   └── [12 more core files]
 │
-├── agents/                        # 3-agent pipeline
-│   ├── ANALYZE.md                # Intent clarification
-│   └── PROMPTOR.md               # Intent formalization
+├── agents/                        # 3-agent execution chain
+│   ├── ANALYZE.md                # Agent 1 — intent clarification
+│   └── PROMPTOR.md               # Agent 2 — intent formalization
 │
 ├── modules/                       # 20 concept + function modules
-│   └── INDEX.md                  # Discovery map
+│   ├── INDEX.md                  # ← Module discovery map
+│   ├── concepts/                 # Conceptual modules
+│   └── functions/                # Functional modules
 │
-├── prompts/                       # Ready-to-use prompts
-│   ├── techniques_examples.md     # 7 real scenarios
-│   ├── meta_observer.md           # Self-critique protocol
-│   └── modes/                    # Expressive modes
+├── prompts/                       # Ready-to-use prompts & modes
+│   ├── techniques_examples.md     # 7 real-world scenarios
+│   ├── meta_observer.md           # Dual-model watcher / self-critique
+│   └── modes/                    # Expressive modes (JAI, DAI, raw truth, etc.)
 │
-├── user_pack/                     # Your personal layer (templates)
-│   ├── PROFILE.md               # Who you are
-│   ├── MEMORY_LOG.md            # Dynamic memory
-│   ├── AGENTS.md                # Custom agents
-│   └── TASKS.md                 # Task tracking
+├── user_pack/                     # YOUR PERSONAL LAYER (templates)
+│   ├── README.md                # How to use USER_PACK
+│   ├── PROFILE.md               # Who you are, cognitive style
+│   ├── MEMORY_LOG.md            # Dynamic memory, patterns, insights
+│   ├── AGENTS.md                # Custom agents and chains
+│   ├── TASKS.md                 # Task tracking synced with CoR
+│   └── [more templates]
 │
-├── SAI_PIPELINE_VISUALIZATION.html
-└── ARCHITECTURE.md
+├── README.md                      # ← Start here
+├── PHILOSOPHY.md                  # Core philosophy & architecture
+├── COMMANDS.md                    # Commands reference
+├── SCENARIOS.md                   # 16 practical scenarios
+├── ROLES.md                       # Roles reference
+├── ARCHITECTURE.md                # System map & file index
+├── SAI_PIPELINE_VISUALIZATION.html # Interactive diagram
+└── LICENSE
 ```
 
 ---
@@ -221,41 +240,51 @@ Rules are stable. Personality pollutes context. Expressive modes (JAI, JLO, DAI)
 
 ## 🔄 Improvements from External Sources
 
-| Source | Integration | File |
-|--------|-------------|------|
-| **MemPalace** | Verbatim palace structure (wings/rooms/drawers) | `core/memory_layer.md` |
-| **Obsidian** | Dual-model watcher / self-critique | `prompts/meta_observer.md` |
-| **Reddit compression** | 3-6 words, result first, no filler | `core/style.md` |
-| **User research** | Rules-first, session hygiene | `core/core.md` |
-
----
-
-## 📦 Local Development Version
-
-For personal use with your profile and experiments:
-→ **Use**: `/home/user/Programs/SAI_clean/`
-
-Includes: MY_CARD.md, USER_DATA/ (archived techniques, personal experiments)
-
-→ **See**: `USER_DATA_GUIDE.md` in Programs version
+| Source | Integration | Details |
+|--------|-------------|---------|
+| **MemPalace** | Palace memory architecture | Verbatim storage in wings/rooms/drawers |
+| **Obsidian note** | Dual-model watcher protocol | Self-critique and observation modes |
+| **Reddit compression** | Compressed output style | 3-6 word sentences, result first, no filler |
+| **User research** | Philosophy update | Rules over personality, session hygiene |
 
 ---
 
 ## 👨‍💻 Credits
 
-**Original system**: doshlk — [GitHub: NoFilterA1](https://github.com/NoFilterA1)  
-**Latest enhancements**: 9 technique integration, session hygiene, memory architecture, pipeline visualization
+**Original system**: doshlk — [GitHub: NoFilterA1](https://github.com/NoFilterA1)
 
-**Tested with**: Claude 3.5 Sonnet, Claude Opus, Claude Haiku
+**Latest enhancements**:
+- 9 analysis techniques (auto-select + manual activation)
+- 10-phase pipeline with HYPER LOOP
+- Session hygiene protocol
+- Memory palace architecture
+- Pipeline visualization
+
+**Built for**: Claude 3.5 Sonnet, Claude Opus, Claude Haiku
 
 ---
 
-## 📖 Read Next
+## 📜 License
 
-1. Start with: [core/core.md](./core/core.md) — understand the mission
-2. Explore: [core/techniques_integration.md](./core/techniques_integration.md) — see how techniques work
-3. Practice: [prompts/techniques_examples.md](./prompts/techniques_examples.md) — real scenarios
-4. Reference: [core/commands.md](./core/commands.md) — full command syntax
+See [LICENSE](./LICENSE)
+
+---
+
+## 📖 Start Here
+
+1. **Philosophy & Architecture** → [./PHILOSOPHY.md](./PHILOSOPHY.md)
+2. **Commands Reference** → [./COMMANDS.md](./COMMANDS.md)  
+3. **Practical Scenarios** → [./SCENARIOS.md](./SCENARIOS.md)
+4. **Roles Reference** → [./ROLES.md](./ROLES.md)
+5. **Core Principles** → [./core/core.md](./core/core.md)
+6. **Techniques Details** → [./core/techniques_integration.md](./core/techniques_integration.md)
+
+---
+
+## 📈 For Personal Use
+
+If using locally with your profile:
+→ Setup: [./user_pack/README.md](./user_pack/README.md)
 
 ---
 
