@@ -147,13 +147,21 @@ Retrieve semantically with `.memory_load`.
 
 ---
 
-## 🔗 Relation to Modules
+## 🔗 Documentation Map
 
 * [Commands →](./core/commands.md) : syntax of thought.
 * [Roles →](./ROLES.md) : cognitive archetypes.
 * [Scenarios →](./SCENARIOS.md) : practical applications.
 * [Techniques →](./core/techniques_integration.md) : auto-activation rules.
 * [Core Principles →](./core/core.md) : entry point for new users.
+
+---
+
+## 📅 Development History
+
+**2022–2023**: Foundation — Core architecture, 3-agent chain, role system  
+**2023–2024**: Enhancement — 9 techniques, 10-phase pipeline, session hygiene  
+**2024**: Polish — Complete documentation, GitHub alignment
 
 ---
 

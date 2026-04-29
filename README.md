@@ -1,5 +1,3 @@
-![SAI BANNER](./assets/bannerr.png)
-
 # 🧠 SAI — Self Adaptive Intelligence
 
 ![SAI](https://img.shields.io/badge/SAI-Self%20Adaptive%20Intelligence-2f2f2f?style=for-the-badge&labelColor=111111)
@@ -249,24 +247,32 @@ Rules are stable. Personality pollutes context. Expressive modes (JAI, JLO, DAI)
 
 ---
 
-## 👨‍💻 Credits
+## 👨‍💻 Development & Credits
 
 **Original system**: doshlk — [GitHub: NoFilterA1](https://github.com/NoFilterA1)
 
-**Latest enhancements**:
+**Development timeline**: 2022–2024
+
+**Latest enhancements** (2024):
 - 9 analysis techniques (auto-select + manual activation)
 - 10-phase pipeline with HYPER LOOP
-- Session hygiene protocol
-- Memory palace architecture
-- Pipeline visualization
+- Session hygiene protocol + context monitoring
+- Memory palace architecture (verbatim storage)
+- Compressed output mode
+- Rules-over-personality philosophy
+- Pipeline visualization (interactive HTML)
 
-**Built for**: Claude 3.5 Sonnet, Claude Opus, Claude Haiku
+**Model support**: Claude 3.5 Sonnet, Claude Opus, Claude Haiku 4.5
 
 ---
 
 ## 📜 License
 
 See [LICENSE](./LICENSE)
+
+---
+
+**Status**: Production-ready | **Total**: 70+ files, ~15K lines | **Last updated**: 2026-04-20
 
 ---
 
