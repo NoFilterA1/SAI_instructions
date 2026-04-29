@@ -1,4 +1,4 @@
-![SAI BANNER](https://github.com/NoFilterA1/SAI_instructions/blob/main/assets/bannerr.png?raw=true)
+![SAI BANNER](https://github.com/NoFilterA1/SAI_instructions/blob/main/banner.png)
 
 # 🧠 SAI — Self Adaptive Intelligence
 
