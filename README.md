@@ -100,7 +100,7 @@ Every request flows through **structured phases**:
 
 **HYPER LOOP**: Parallel background thinking while you read.
 
-→ **Visualization**: [SAI_PIPELINE_VISUALIZATION.html](./SAI_PIPELINE_VISUALIZATION.html)
+→ **Visualization**: [Открыть интерактивный cognitive dashboard →](https://raw.githack.com/NoFilterA1/SAI_instructions/main/SAI_PIPELINE_VISUALIZATION_v2.html)
 
 ---
 
@@ -175,7 +175,7 @@ Your persistent personal system:
 ├── SCENARIOS.md                   # 16 practical scenarios
 ├── ROLES.md                       # Roles reference
 ├── ARCHITECTURE.md                # System map & file index
-├── SAI_PIPELINE_VISUALIZATION.html # Interactive diagram
+├── SAI_PIPELINE_VISUALIZATION_v2.html # Interactive cognitive dashboard
 └── LICENSE
 ```
 
